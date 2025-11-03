@@ -22,7 +22,7 @@ export default function IGNNordic() {
     },
     {
       title: "Console Update Brings Major Performance Improvements",
-      Image: "https://jziiuvusgsqonnjefeay.supabase.co/storage/v1/object/sign/gameguide/Pictures/PS5.webp?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9kOWM0YzRmNi1kY2FjLTQ5ZDAtYmI4ZC1kODIxNTE5Y2U3YmUiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJnYW1lZ3VpZGUvUGljdHVyZXMvUFM1LndlYnAiLCJpYXQiOjE3NjIyMDM1MzYsImV4cCI6MTc5MzczOTUzNn0.avv0x8klI9MeUwQKBLyGQh6hMZLWWpjS996yjKJBm1o",
+      image: "https://jziiuvusgsqonnjefeay.supabase.co/storage/v1/object/sign/gameguide/Pictures/PS5.webp?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9kOWM0YzRmNi1kY2FjLTQ5ZDAtYmI4ZC1kODIxNTE5Y2U3YmUiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJnYW1lZ3VpZGUvUGljdHVyZXMvUFM1LndlYnAiLCJpYXQiOjE3NjIyMDM1MzYsImV4cCI6MTc5MzczOTUzNn0.avv0x8klI9MeUwQKBLyGQh6hMZLWWpjS996yjKJBm1o",
       category: "Tech",
       score: null
     },
