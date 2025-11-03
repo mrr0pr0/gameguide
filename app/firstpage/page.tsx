@@ -22,7 +22,7 @@ export default function IGNNordic() {
     },
     {
       title: "Console Update Brings Major Performance Improvements",
-      image: "https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?w=600&h=400&fit=crop",
+      image: "https://jziiuvusgsqonnjefeay.supabase.co/storage/v1/object/sign/gameguide/Pictures/PS5.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9kOWM0YzRmNi1kY2FjLTQ5ZDAtYmI4ZC1kODIxNTE5Y2U3YmUiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJnYW1lZ3VpZGUvUGljdHVyZXMvUFM1LnBuZyIsImlhdCI6MTc2MjIwMDg5NCwiZXhwIjoyMDc3NTYwODk0fQ.6Lg5ngaAgNXJDqsT9-OfSLK5NatCZgyoTZ7Px2q0ArA",
       category: "Tech",
       score: null
     },
