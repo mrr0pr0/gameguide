@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 
@@ -35,7 +37,7 @@ export default function Home() {
             {" "}center.
           </p>
           <div className="mt-2">
-            <Link href="/app/firstpage.tsx">
+            <Link href="/firstpage">
               <button className="rounded bg-foreground px-3 py-1 text-background">
                 Open first page
               </button>
