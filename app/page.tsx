@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -23,16 +24,23 @@ export default function Home() {
               className="font-medium text-zinc-950 dark:text-zinc-50"
             >
               Templates
-            </a>{" "}
-            or the{" "}
+            </a>
+            {" "}or the{" "}
             <a
               href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
               className="font-medium text-zinc-950 dark:text-zinc-50"
             >
               Learning
-            </a>{" "}
-            center.
+            </a>
+            {" "}center.
           </p>
+          <div className="mt-2">
+            <Link href="/firstpage">
+              <button className="rounded bg-foreground px-3 py-1 text-background">
+                Open first page
+              </button>
+            </Link>
+          </div>
         </div>
         <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
           <a
