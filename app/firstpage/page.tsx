@@ -61,7 +61,7 @@ export default function IGNNordic() {
               </button>
               <div className="flex items-center gap-2">
                 <Flame className="w-8 h-8 text-red-600" />
-                <h1 className="text-2xl font-bold">IGN<span className="text-red-600">Nordic</span></h1>
+                <h1 className="text-2xl font-bold">GameGuide<span className="text-red-600">Nordic</span></h1>
               </div>
               <nav className="hidden lg:flex gap-6">
                 <button onClick={() => setActiveTab('news')} className={`${activeTab === 'news' ? 'text-red-600' : 'text-gray-400'} hover:text-white transition`}>News</button>
@@ -205,7 +205,7 @@ export default function IGNNordic() {
       {/* Footer */}
       <footer className="bg-zinc-900 border-t border-zinc-800 mt-16 py-8">
         <div className="max-w-7xl mx-auto px-4 text-center text-gray-400 text-sm">
-          <p>© 2025 IGN Nordic. All rights reserved.</p>
+          <p>© 2025 Game Guide. All rights reserved.</p>
         </div>
       </footer>
     </div>
