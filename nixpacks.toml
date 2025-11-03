@@ -1,0 +1,16 @@
+# Example nixpacks.toml for a Node.js application
+[phases.build]
+cmds = ["npm install", "npm run build"]
+
+[start]
+cmd = "npm start"
+
+[packages]
+nix = ["nodejs", "yarn"]
+apt = ["git"]
+
+[providers]
+include = ["nodejs", "..."] # "..." matches auto-detected providers
+
+[variables]
+NIXPACKS_NODE_VERSION = "20"
