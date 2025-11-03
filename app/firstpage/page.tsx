@@ -16,7 +16,7 @@ export default function IGNNordic() {
   const stories = [
     {
       title: "New Fantasy RPG Announced with Stunning Visuals",
-      image: "https://jziiuvusgsqonnjefeay.supabase.co/storage/v1/object/sign/gameguide/Pictures/arcade.webp?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9kOWM0YzRmNi1kY2FjLTQ5ZDAtYmI4ZC1kODIxNTE5Y2U3YmUiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJnYW1lZ3VpZGUvUGljdHVyZXMvYXJjYWRlLndlYnAiLCJpYXQiOjE3NjIyMDMwNDYsImV4cCI6MTc5MzczOTA0Nn0.ytrj_EBFCLk8833gEhqrvB6qnZAiPfIH3HSbFMS2Wrg",
+      image: "https://jziiuvusgsqonnjefeay.supabase.co/storage/v1/object/sign/gameguide/Pictures/keyboard.webp?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9kOWM0YzRmNi1kY2FjLTQ5ZDAtYmI4ZC1kODIxNTE5Y2U3YmUiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJnYW1lZ3VpZGUvUGljdHVyZXMva2V5Ym9hcmQud2VicCIsImlhdCI6MTc2MjIwMzM3MywiZXhwIjoxNzkzNzM5MzczfQ.r0RVEd68cDg3dRwiLUgUC46LnBP3ymBsIdMkApZy7_E",
       category: "News",
       score: null
     },
