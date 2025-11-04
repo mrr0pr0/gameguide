@@ -10,7 +10,8 @@ export default function IGNNordic() {
     title: "The Most Anticipated Games of 2025",
     image: "https://jziiuvusgsqonnjefeay.supabase.co/storage/v1/object/sign/gameguide/Pictures/controller.webp?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9kOWM0YzRmNi1kY2FjLTQ5ZDAtYmI4ZC1kODIxNTE5Y2U3YmUiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJnYW1lZ3VpZGUvUGljdHVyZXMvY29udHJvbGxlci53ZWJwIiwiaWF0IjoxNzYyMjAyODkyLCJleHAiOjE3OTM3Mzg4OTJ9.OI35YR523XcJt2WHF0_CEQCY0eQp66rtseYYCNq9h5w",
     category: "Feature",
-    excerpt: "From massive RPGs to indie darlings, here are the games we can't wait to play this year."
+    excerpt: "From massive RPGs to indie darlings, here are the games we can't wait to play this year.",
+    redirect: "https://example.com/anticipated-games-2025"
   };
 
   const stories = [
@@ -18,33 +19,58 @@ export default function IGNNordic() {
       title: "New Fantasy RPG Announced with Stunning Visuals",
       image: "https://jziiuvusgsqonnjefeay.supabase.co/storage/v1/object/sign/gameguide/Pictures/PS5.webp?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9kOWM0YzRmNi1kY2FjLTQ5ZDAtYmI4ZC1kODIxNTE5Y2U3YmUiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJnYW1lZ3VpZGUvUGljdHVyZXMvUFM1LndlYnAiLCJpYXQiOjE3NjIyMDI2MDMsImV4cCI6MTc5MzczODYwM30.d_wufYLYPMnn8fcTTcNd7vmTN_Ot0jqOgmDmT7lSEaA",
       category: "News",
-      score: null
+      score: null,
+      redirect: "https://example.com/fantasy-rpg-announcement"
     },
     {
       title: "Console Update Brings Major Performance Improvements",
-      Image: "",
+      image: "https://jziiuvusgsqonnjefeay.supabase.co/storage/v1/object/sign/gameguide/Pictures/controller.webp?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9kOWM0YzRmNi1kY2FjLTQ5ZDAtYmI4ZC1kODIxNTE5Y2U3YmUiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJnYW1lZ3VpZGUvUGljdHVyZXMvY29udHJvbGxlci53ZWJwIiwiaWF0IjoxNzYyMjAyODkyLCJleHAiOjE3OTM3Mzg4OTJ9.OI35YR523XcJt2WHF0_CEQCY0eQp66rtseYYCNq9h5w",
       category: "Tech",
-      score: null
+      score: null,
+      redirect: "https://example.com/console-update"
     },
     {
       title: "Indie Developer's New Game Gets Perfect Score",
       image: "https://jziiuvusgsqonnjefeay.supabase.co/storage/v1/object/sign/gameguide/Pictures/arcade.webp?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9kOWM0YzRmNi1kY2FjLTQ5ZDAtYmI4ZC1kODIxNTE5Y2U3YmUiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJnYW1lZ3VpZGUvUGljdHVyZXMvYXJjYWRlLndlYnAiLCJpYXQiOjE3NjIyMDI2ODIsImV4cCI6MTc5MzczODY4Mn0.SBokh7HX7fSFfuieu99ZGEPnjUiIOmvpjRxxBt_u_pI",
       category: "Review",
-      score: 10
+      score: 10,
+      redirect: "https://example.com/indie-perfect-score"
     },
     {
       title: "Multiplayer Shooter Beta Dates Announced",
       image: "https://jziiuvusgsqonnjefeay.supabase.co/storage/v1/object/sign/gameguide/Pictures/multiplayer.webp?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9kOWM0YzRmNi1kY2FjLTQ5ZDAtYmI4ZC1kODIxNTE5Y2U3YmUiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJnYW1lZ3VpZGUvUGljdHVyZXMvbXVsdGlwbGF5ZXIud2VicCIsImlhdCI6MTc2MjIwMjcyOCwiZXhwIjoxNzkzNzM4NzI4fQ.NbpAiQxXrDu9MHxIGsvkaTcrD6x5mrjH8R4IAm33_Og",
       category: "News",
-      score: null
+      score: null,
+      redirect: "https://example.com/multiplayer-beta"
     }
   ];
 
   const videos = [
-    { title: "Game of the Year Trailer", views: "2.3M", duration: "4:32" },
-    { title: "Developer Interview: Behind the Scenes", views: "890K", duration: "12:45" },
-    { title: "Top 10 Upcoming Releases", views: "1.5M", duration: "8:20" }
+    { 
+      title: "Game of the Year Trailer", 
+      views: "2.3M", 
+      duration: "4:32",
+      redirect: "https://example.com/goty-trailer"
+    },
+    { 
+      title: "Developer Interview: Behind the Scenes", 
+      views: "890K", 
+      duration: "12:45",
+      redirect: "https://example.com/dev-interview"
+    },
+    { 
+      title: "Top 10 Upcoming Releases", 
+      views: "1.5M", 
+      duration: "8:20",
+      redirect: "https://example.com/top-10-upcoming"
+    }
   ];
+
+  const handleRedirect = (url: string) => {
+    if (url) {
+      window.open(url, '_blank');
+    }
+  };
 
   return (
     <div className="min-h-screen bg-black text-white">
@@ -95,7 +121,10 @@ export default function IGNNordic() {
       {/* Main Content */}
       <main className="max-w-7xl mx-auto px-4 py-8">
         {/* Hero Story */}
-        <div className="relative h-[500px] rounded-lg overflow-hidden mb-8 group cursor-pointer">
+        <div 
+          className="relative h-[500px] rounded-lg overflow-hidden mb-8 group cursor-pointer"
+          onClick={() => handleRedirect(mainStory.redirect)}
+        >
           <img 
             src={mainStory.image} 
             alt={mainStory.title}
@@ -131,7 +160,11 @@ export default function IGNNordic() {
             
             <div className="grid md:grid-cols-2 gap-6">
               {stories.map((story, idx) => (
-                <article key={idx} className="group cursor-pointer">
+                <article 
+                  key={idx} 
+                  className="group cursor-pointer"
+                  onClick={() => handleRedirect(story.redirect)}
+                >
                   <div className="relative overflow-hidden rounded-lg mb-3">
                     <img 
                       src={story.image} 
@@ -167,7 +200,11 @@ export default function IGNNordic() {
               </h3>
               <div className="space-y-4">
                 {videos.map((video, idx) => (
-                  <div key={idx} className="group cursor-pointer">
+                  <div 
+                    key={idx} 
+                    className="group cursor-pointer"
+                    onClick={() => handleRedirect(video.redirect)}
+                  >
                     <div className="relative bg-zinc-800 rounded-lg overflow-hidden mb-2 h-32">
                       <div className="absolute inset-0 flex items-center justify-center">
                         <Play className="w-12 h-12 text-white group-hover:text-red-600 transition" />
