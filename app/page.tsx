@@ -37,7 +37,7 @@ export default function Home() {
             {" "}center.
           </p>
           <div className="mt-2">
-            <Link href="app/firstpage/newsite.tsx">
+            <Link href="/firstpage/newsite.tsx">
               <button className="rounded bg-foreground px-3 py-1 text-background">
                 Open first page
               </button>
