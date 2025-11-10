@@ -1,73 +1,68 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
+import { Flame, Newspaper, BookOpen } from "lucide-react";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>
-            {" "}or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>
-            {" "}center.
-          </p>
-          <div className="mt-2">
-            <Link href="./firstpage">
-              <button className="rounded bg-foreground px-3 py-1 text-background">
-                Open first page
-              </button>
-            </Link>
+    <div className="min-h-screen bg-black text-white flex items-center justify-center">
+      <main className="w-full max-w-5xl px-6 py-16">
+        <div className="text-center mb-16">
+          <div className="flex items-center justify-center gap-3 mb-6">
+            <Flame className="w-16 h-16 text-red-600" />
+            <h1 className="text-6xl font-bold">
+              GameGuide<span className="text-red-600">Nordic</span>
+            </h1>
           </div>
+          <p className="text-xl text-gray-400 max-w-2xl mx-auto">
+            Your ultimate destination for gaming news, reviews, and comprehensive guides
+          </p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+
+        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <Link href="/firstpage">
+            <div className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-red-900 to-red-600 p-8 h-80 cursor-pointer transition-all hover:scale-105 hover:shadow-2xl hover:shadow-red-600/50">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -mr-16 -mt-16" />
+              <div className="absolute bottom-0 left-0 w-40 h-40 bg-black/20 rounded-full -ml-20 -mb-20" />
+              <div className="relative z-10 h-full flex flex-col justify-between">
+                <div>
+                  <Newspaper className="w-16 h-16 mb-4 text-white group-hover:scale-110 transition-transform" />
+                  <h2 className="text-4xl font-bold mb-3">News</h2>
+                  <p className="text-red-100 text-lg">
+                    Latest gaming news, reviews, and industry updates from around the world
+                  </p>
+                </div>
+                <div className="flex items-center gap-2 text-white font-semibold">
+                  Explore News 
+                  <span className="group-hover:translate-x-2 transition-transform">→</span>
+                </div>
+              </div>
+            </div>
+          </Link>
+
+          <Link href="/guides">
+            <div className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-zinc-800 to-zinc-900 p-8 h-80 cursor-pointer transition-all hover:scale-105 hover:shadow-2xl hover:shadow-zinc-700/50 border border-zinc-700">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-white/5 rounded-full -mr-16 -mt-16" />
+              <div className="absolute bottom-0 left-0 w-40 h-40 bg-red-600/10 rounded-full -ml-20 -mb-20" />
+              <div className="relative z-10 h-full flex flex-col justify-between">
+                <div>
+                  <BookOpen className="w-16 h-16 mb-4 text-red-600 group-hover:scale-110 transition-transform" />
+                  <h2 className="text-4xl font-bold mb-3">Guides</h2>
+                  <p className="text-gray-300 text-lg">
+                    Complete walkthroughs, tips, strategies, and expert advice for your favorite games
+                  </p>
+                </div>
+                <div className="flex items-center gap-2 text-white font-semibold">
+                  Browse Guides 
+                  <span className="group-hover:translate-x-2 transition-transform">→</span>
+                </div>
+              </div>
+            </div>
+          </Link>
+        </div>
+
+        <div className="text-center mt-16 text-gray-500 text-sm">
+          <p>© 2025 GameGuideNordic. All rights reserved.</p>
         </div>
       </main>
     </div>
