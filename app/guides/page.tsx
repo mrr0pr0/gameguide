@@ -18,34 +18,14 @@ export default function GuidesPage() {
 
   const featuredGuides = [
     {
-      title: "Complete Beginner's Guide to RPG Mechanics",
-      game: "Fantasy RPG Series",
-      category: "beginner",
-      image: "https://jziiuvusgsqonnjefeay.supabase.co/storage/v1/object/sign/gameguide/Pictures/controller.webp?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9kOWM0YzRmNi1kY2FjLTQ5ZDAtYmI4ZC1kODIxNTE5Y2U3YmUiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJnYW1lZ3VpZGUvUGljdHVyZXMvY29udHJvbGxlci53ZWJwIiwiaWF0IjoxNzYyMjAyODkyLCJleHAiOjE3OTM3Mzg4OTJ9.OI35YR523XcJt2WHF0_CEQCY0eQp66rtseYYCNq9h5w",
+      title: "assassins creed rouge",
+      game: "story",
+      category: "story",
+      image: "",
       difficulty: "Beginner",
-      readTime: "15 min",
+      readTime: "7.5hours",
       rating: 4.8,
-      description: "Master the basics of character building, combat systems, and progression in modern RPGs."
-    },
-    {
-      title: "Ultimate Weapons & Gear Location Guide",
-      game: "Adventure Quest",
-      category: "walkthroughs",
-      image: "https://jziiuvusgsqonnjefeay.supabase.co/storage/v1/object/sign/gameguide/Pictures/PS5.webp?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9kOWM0YzRmNi1kY2FjLTQ5ZDAtYmI4ZC1kODIxNTE5Y2U3YmUiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJnYW1lZ3VpZGUvUGljdHVyZXMvUFM1LndlYnAiLCJpYXQiOjE3NjIyMDI2MDMsImV4cCI6MTc5MzczODYwM30.d_wufYLYPMnn8fcTTcNd7vmTN_Ot0jqOgmDmT7lSEaA",
-      difficulty: "Advanced",
-      readTime: "25 min",
-      rating: 4.9,
-      description: "Find every legendary weapon, hidden armor set, and secret treasure in the game."
-    },
-    {
-      title: "Competitive Multiplayer Strategy Guide",
-      game: "Battle Arena",
-      category: "multiplayer",
-      image: "https://jziiuvusgsqonnjefeay.supabase.co/storage/v1/object/sign/gameguide/Pictures/multiplayer.webp?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9kOWM0YzRmNi1kY2FjLTQ5ZDAtYmI4ZC1kODIxNTE5Y2U3YmUiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJnYW1lZ3VpZGUvUGljdHVyZXMvbXVsdGlwbGF5ZXIud2VicCIsImlhdCI6MTc2MjIwMjcyOCwiZXhwIjoxNzkzNzM4NzI4fQ.NbpAiQxXrDu9MHxIGsvkaTcrD6x5mrjH8R4IAm33_Og",
-      difficulty: "Intermediate",
-      readTime: "20 min",
-      rating: 4.7,
-      description: "Advanced tactics, team compositions, and map control strategies for ranked play."
+      description: "story game"
     }
   ];
 
