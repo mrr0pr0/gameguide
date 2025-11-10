@@ -30,12 +30,12 @@ export default function GuidesPage() {
   ];
 
   const popularGuides = [
-    { title: "100% Achievement Completion Roadmap", category: "achievements", readTime: "30 min" },
-    { title: "Boss Fight Strategies & Weaknesses", category: "strategy", readTime: "18 min" },
-    { title: "Best Character Builds for Each Playstyle", category: "strategy", readTime: "22 min" },
-    { title: "Hidden Secrets & Easter Eggs Location", category: "walkthroughs", readTime: "12 min" },
-    { title: "Beginner's Guide to Crafting & Resources", category: "beginner", readTime: "15 min" },
-    { title: "PvP Tier List & Meta Analysis", category: "multiplayer", readTime: "10 min" }
+    { title: "100% Achievement Completion Roadmap", category: "achievements", readTime: "30 min", href: "/guides/achievements" },
+    { title: "Boss Fight Strategies & Weaknesses", category: "strategy", readTime: "18 min", href: "/guides/boss-strategies" },
+    { title: "Best Character Builds for Each Playstyle", category: "strategy", readTime: "22 min", href: "/guides/character-builds" },
+    { title: "Hidden Secrets & Easter Eggs Location", category: "walkthroughs", readTime: "12 min", href: "/guides/hidden-secrets" },
+    { title: "Beginner's Guide to Crafting & Resources", category: "beginner", readTime: "15 min", href: "/guides/crafting" },
+    { title: "PvP Tier List & Meta Analysis", category: "multiplayer", readTime: "10 min", href: "/guides/pvp-tier-list" }
   ];
 
   const filteredFeaturedGuides = featuredGuides.filter(guide => {
@@ -133,35 +133,32 @@ export default function GuidesPage() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {filteredFeaturedGuides.map((guide, idx) => (
-              <article key={idx} className="group bg-zinc-900 rounded-lg overflow-hidden hover:ring-2 hover:ring-red-600 transition cursor-pointer">
-                <div className="relative h-48 overflow-hidden">
-                  <img 
-                    src={guide.image} 
-                    alt={guide.title}
-                    className="w-full h-full object-cover group-hover:scale-110 transition duration-500"
-                  />
-                  <div className="absolute top-3 right-3 bg-red-600 px-3 py-1 rounded-full text-xs font-bold uppercase">
-                    {guide.difficulty}
+              <Link key={idx} href="/guides/assassins-creed-rogue">
+                <article className="group bg-zinc-900 rounded-lg overflow-hidden hover:ring-2 hover:ring-red-600 transition cursor-pointer">
+                  <div className="relative h-48 overflow-hidden bg-gradient-to-br from-red-900 to-black">
+                    <div className="absolute top-3 right-3 bg-red-600 px-3 py-1 rounded-full text-xs font-bold uppercase">
+                      {guide.difficulty}
+                    </div>
+                    <div className="absolute bottom-3 left-3 flex items-center gap-2">
+                      <Star className="w-4 h-4 text-yellow-500 fill-yellow-500" />
+                      <span className="text-sm font-bold">{guide.rating}</span>
+                    </div>
                   </div>
-                  <div className="absolute bottom-3 left-3 flex items-center gap-2">
-                    <Star className="w-4 h-4 text-yellow-500 fill-yellow-500" />
-                    <span className="text-sm font-bold">{guide.rating}</span>
+                  <div className="p-5">
+                    <p className="text-xs text-red-600 font-semibold uppercase mb-2">{guide.game}</p>
+                    <h3 className="text-xl font-bold mb-3 group-hover:text-red-600 transition line-clamp-2">
+                      {guide.title}
+                    </h3>
+                    <p className="text-gray-400 text-sm mb-4 line-clamp-2">
+                      {guide.description}
+                    </p>
+                    <div className="flex items-center justify-between text-sm text-gray-500">
+                      <span>{guide.readTime} read</span>
+                      <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                    </div>
                   </div>
-                </div>
-                <div className="p-5">
-                  <p className="text-xs text-red-600 font-semibold uppercase mb-2">{guide.game}</p>
-                  <h3 className="text-xl font-bold mb-3 group-hover:text-red-600 transition line-clamp-2">
-                    {guide.title}
-                  </h3>
-                  <p className="text-gray-400 text-sm mb-4 line-clamp-2">
-                    {guide.description}
-                  </p>
-                  <div className="flex items-center justify-between text-sm text-gray-500">
-                    <span>{guide.readTime} read</span>
-                    <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                  </div>
-                </div>
-              </article>
+                </article>
+              </Link>
             ))}
           </div>
         </section>
@@ -173,8 +170,9 @@ export default function GuidesPage() {
           </h2>
           <div className="grid md:grid-cols-2 gap-4">
             {filteredPopularGuides.map((guide, idx) => (
-              <div 
+              <Link 
                 key={idx}
+                href={guide.href}
                 className="group flex items-center gap-4 p-4 bg-zinc-900 rounded-lg hover:bg-zinc-800 transition cursor-pointer"
               >
                 <div className="flex-shrink-0 w-12 h-12 bg-red-600/20 rounded-lg flex items-center justify-center">
@@ -187,7 +185,7 @@ export default function GuidesPage() {
                   <p className="text-sm text-gray-500">{guide.readTime} read</p>
                 </div>
                 <ChevronRight className="w-5 h-5 text-gray-600 group-hover:text-red-600 group-hover:translate-x-1 transition" />
-              </div>
+              </Link>
             ))}
           </div>
         </section>
@@ -197,9 +195,9 @@ export default function GuidesPage() {
           <p className="text-red-100 mb-6 text-lg">
             Request a guide and our expert team will create it for you
           </p>
-          <button className="bg-black hover:bg-zinc-900 text-white px-8 py-3 rounded-lg font-semibold transition">
+          <Link href="/request-guide" className="inline-block bg-black hover:bg-zinc-900 text-white px-8 py-3 rounded-lg font-semibold transition">
             Request a Guide
-          </button>
+          </Link>
         </section>
       </main>
 
